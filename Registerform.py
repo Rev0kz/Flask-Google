@@ -6,7 +6,8 @@ class RegisterForm(FlaskForm):
   name = StringField('name', [validator.DataRequired(), validators.Length(max=255)]) 
   password = PasswordField('new password', [validator.DataRequired(),validator.Length(min=8),
                                             validators.EqaulTo('confirm', message='password must match']) 
-  confirm = PasswordField('Repeat Password')                                        
+  confirm = PasswordField('Repeat Password')     
+  email = StringField('emailaddress', [validator.DataRequired(), validator.Length(min=6, max=35)] 
   
      
           
