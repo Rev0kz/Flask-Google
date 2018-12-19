@@ -1,0 +1,34 @@
+
+<html>
+<head> 
+<title>Register</title>
+</head>
+<body>
+<h1>Register form</h1>
+<form methods="POST" action="{{ url_for('register') }}"> 
+    {{ form.name.label }}
+    {{ form.name }}
+    <ul> 
+    {% for error in form.name.errors %}
+       <li style="coloured:red;">{{ error }}</li>
+    {% endfor %}
+    </ul>
+     {{ form.password.label }} 
+     {{ form.password }}
+     {% for error in form.password.errors %} 
+     <ul> 
+        <li style="coloured:red;">{{ error }}</li>
+     {% endfor %}
+     </ul>
+     {{ form.email.label }}
+     {{ form.email }}
+     <ul> 
+     {% for error in form.email.errors %}
+        <li style="color:red;">{{ error }}</li> 
+     {% endfor %}
+     </ul>
+     {{ form.recaptcha }}
+     <input type="submit" value="Submit">
+</form>
+</body>
+</html> 
