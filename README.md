@@ -6,4 +6,6 @@ Clone this repo in a virtualised environment. You can use the following commands
 
 `pip install virtualenv`
 
+`mkidr directory_name`
+
 
