@@ -8,4 +8,12 @@ Clone this repo in a virtualised environment. You can use the following commands
 
 `mkidr directory_name`
 
+`virtualenv projectname`
 
+Install the following packages to run the app locally
+
+`pip install -r requirements.txt`
+
+Run the app locally using the command below    
+
+`python app.py`
