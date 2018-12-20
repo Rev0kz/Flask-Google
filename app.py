@@ -16,7 +16,7 @@ def register():
 	if request.method == 'POST' and form.validate():
     		user = User(form.user.data, form.password.data, form.email.data)
     		flash("successful registration")
-    		return redirect(url_for("googlemap"))
+    		return redirect(url_for('hello_user'))
   	return render_template("form.html", form=form)
 
 
