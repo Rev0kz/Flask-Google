@@ -17,7 +17,12 @@ def register():
     		user = User(form.user.data, form.password.data, form.email.data)
     		flash("successful registration")
     		return redirect(url_for('hello_user'))
-  	return render_template("form.html", form=form)
+  	return render_template("form.html", form=form)        
+
+
+@app.route('/welcome')
+def welcome_user():
+  return 'welcome user'
 
 
 
