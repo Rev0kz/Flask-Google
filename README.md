@@ -23,3 +23,7 @@ Run the app locally using the command below
 Open your browser and type the following to view Google reCAPTCHA in Flask
 
 `127.0.0.1:50000/register`
+
+## Built  With  
+Flask - Micro Framework for Python developers
+Google reCAPTCHA - Captcha service to prevent or stop spam abuse
