@@ -2,6 +2,8 @@
 This project shows how to integrate Google reCAPTCHA in a Flask web application. 
 
 ## Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes
+
 Clone this repo in a virtualised environment. You can use the following commands to create virtualised environment
 
 `pip install virtualenv`
