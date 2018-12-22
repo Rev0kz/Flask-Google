@@ -19,3 +19,7 @@ Install the following packages to run the app locally
 Run the app locally using the command below    
 
 `python app.py`
+
+Open your browser and type the following to view Google reCAPTCHA in Flask
+
+`127.0.0.1:50000/register`
