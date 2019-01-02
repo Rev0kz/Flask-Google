@@ -1,7 +1,7 @@
 # Flask-Google  
 This project shows how to integrate Google reCAPTCHA in a Flask web application. 
 
-## Getting Startedhttps://github.com/Rev0kz/Flask-Google
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes
 
