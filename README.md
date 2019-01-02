@@ -1,7 +1,8 @@
 # Flask-Google  
 This project shows how to integrate Google reCAPTCHA in a Flask web application. 
 
-## Getting Started
+## Getting Startedhttps://github.com/Rev0kz/Flask-Google
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes
 
 Clone this repo in a virtualised environment. You can use the following commands to create virtualised environment
@@ -10,9 +11,13 @@ Clone this repo in a virtualised environment. You can use the following commands
 
 `mkidr directory_name`
 
-`virtualenv projectname`
+`virtualenv projectname`           
 
-Install the following packages to run the app locally
+Inside the project directory, clone it using the `git clone` command
+
+`git clone https://github.com/Rev0kz/Flask-Google`
+
+Then Install the following packages via the command below
 
 `pip install -r requirements.txt`
 
