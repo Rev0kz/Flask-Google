@@ -10,7 +10,7 @@ app.config['RECAPTCHA_PRIVATE_KEY']='6LelJIAUAAAAAD-h6TVx4wufNd5XMa-b_4V7Yxr0'
 app.config['RECAPTCHA_OPTIONS']= {'theme':'white'}
 
 
-@app.route('/register', methods='POST')
+@app.route('/register', methods=['GET', 'POST'])
 def register():
 	form = RegisterForm(request.form)
 	if request.method == 'POST' and form.validate():
