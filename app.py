@@ -15,6 +15,7 @@ def register():
 	form = RegisterForm(request.form)
 	if request.method == 'POST' and form.validate():
     		user = User(form.user.data, form.password.data, form.email.data)
+		return redirect('/success')
     	return render_template("form.html", form=form)        
 
 
