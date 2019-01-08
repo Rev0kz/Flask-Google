@@ -18,9 +18,9 @@ def register():
     	return render_template("form.html", form=form)        
 
 
-@app.route('/welcome')
-def welcome_user():
-  return 'welcome user'
+@app.route('/success')
+def success():
+  return 'registered successfully'
 
 
 
