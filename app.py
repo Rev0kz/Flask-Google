@@ -5,8 +5,8 @@ from form import RegisterForm
 app = Flask(__name__)
 
 app.config['RECAPTCHA_USE_SSL']= False
-app.config['RECAPTCHA_PUBLIC_KEY']='6LelJIAUAAAAAKUaSluZ-TakFlNc8rHAH-Lq7UBS'
-app.config['RECAPTCHA_PRIVATE_KEY']='6LelJIAUAAAAAD-h6TVx4wufNd5XMa-b_4V7Yxr0'
+app.config['RECAPTCHA_PUBLIC_KEY']='enter_your _public_key'
+app.config['RECAPTCHA_PRIVATE_KEY']='enter_your_private_key'
 app.config['RECAPTCHA_OPTIONS']= {'theme':'white'}
 
 
