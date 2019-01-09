@@ -7,5 +7,4 @@ class RegisterForm(Form):
                                             validators.EqualTo('confirm', message='password must match')]) 
   confirm = PasswordField('Repeat Password')     
   email = StringField('emailaddress', [validators.DataRequired(), validators.Length(min=6, max=35)]) 
-
   recaptcha = RecaptchaField()
