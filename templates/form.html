@@ -6,6 +6,7 @@
 <body>
 <h1>Register form</h1>
 <form methods="POST" action="{{ url_for('register') }}"> 
+    {{ csrf_token }}
     {{ form.name.label }}
     {{ form.name }}
     <ul> 
