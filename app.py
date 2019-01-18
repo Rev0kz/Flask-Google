@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 from form import RegisterForm  
 
 
@@ -12,16 +12,14 @@ app.config['RECAPTCHA_OPTIONS']= {'theme':'white'}
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-	form = RegisterForm(request.form)
-	if request.method == 'POST' and form.validate():
-    		user = User(form.user.data, form.password.data, form.email.data)
-		return redirect('/success')
-    	return render_template("form.html", form=form)        
+	form = RegisterForm()
+	
+	if form.validate_on_submit()
+		return 'the form has been submitted. Success!'
+	
+    	return render_template("register.html", form=form)        
 
 
-@app.route('/success')
-def success():
-  return 'registered successfully'
 
 
 
