@@ -6,7 +6,7 @@
 <body>
 <h1>Register form</h1>
 <form methods="POST" action="{{ url_for('register') }}"> 
-    {{ csrf_token }}
+    {{ form.csrf_token }}
     {{ form.name.label }}
     {{ form.name }}
     <ul> 
@@ -16,7 +16,7 @@
     </ul>
      {{ form.password.label }} 
      {{ form.password }}
-     {% for error in form.password.errors %} 
+     {% for error in form.password.error %} 
      <ul> 
         <li style="coloured:red;">{{ error }}</li>
      {% endfor %}
@@ -24,12 +24,12 @@
      {{ form.email.label }}
      {{ form.email }}
      <ul> 
-     {% for error in form.email.errors %}
+     {% for error in form.email.error %}
         <li style="color:red;">{{ error }}</li> 
      {% endfor %}
      </ul>
      {{ form.recaptcha }}
-     <input type="submit" value="Submit">
+     <input type="submit" value="submit">
 </form>
 </body>
 </html> 
