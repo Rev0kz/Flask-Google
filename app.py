@@ -14,7 +14,7 @@ app.config['RECAPTCHA_OPTIONS']= {'theme':'white'}
 def register():
 	form = RegisterForm()
 	
-	if form.validate_on_submit()
+	if form.validate_on_submit():
 		return 'the form has been submitted. Success!'
 	
     	return render_template("register.html", form=form)        
